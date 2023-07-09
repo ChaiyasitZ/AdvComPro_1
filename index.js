@@ -7,23 +7,24 @@ function calculateBMI() {
     if (!isNaN(bmi)) {
       var bmiText = "Your BMI is: " + bmi.toFixed(2);
 
+      resultContainer.innerHTML = bmiText;
+      resultContainer.classList.remove("low", "normal", "high", "caution");
+
       if (bmi < 18.5) {
-        bmiText += " (Low)";
-        resultContainer.classList.add("low");
+        resultContainer.classList.add("low", "caution");
+        var cautionText = "Caution: Low BMI may indicate an eating disorder, malnutrition or other health problems.";
+        var cautionElement = document.createElement("p");
+        cautionElement.textContent = cautionText;
+        resultContainer.appendChild(cautionElement);
       } else if (bmi >= 18.5 && bmi <= 24.9) {
-        bmiText += " (Normal)";
         resultContainer.classList.add("normal");
       } else {
-        bmiText += " (High)";
-        resultContainer.classList.add("high");
+        resultContainer.classList.add("high", "caution");
         var cautionText = "Caution: High BMI may indicate increased health risks.";
         var cautionElement = document.createElement("p");
-        cautionElement.classList.add("caution");
         cautionElement.textContent = cautionText;
         resultContainer.appendChild(cautionElement);
       }
-
-      resultContainer.innerHTML = bmiText;
     } else {
       resultContainer.innerHTML = "Please enter valid values for weight and height.";
     }
