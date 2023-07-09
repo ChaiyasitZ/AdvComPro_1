@@ -16,6 +16,11 @@ function calculateBMI() {
       } else {
         bmiText += " (High)";
         resultContainer.classList.add("high");
+        var cautionText = "Caution: High BMI may indicate increased health risks.";
+        var cautionElement = document.createElement("p");
+        cautionElement.classList.add("caution");
+        cautionElement.textContent = cautionText;
+        resultContainer.appendChild(cautionElement);
       }
 
       resultContainer.innerHTML = bmiText;
