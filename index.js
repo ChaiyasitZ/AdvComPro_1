@@ -1,5 +1,5 @@
-function calculateBMI() {
-    var weight = parseFloat(document.getElementById('weight').value);
+function calculateBMI() { 
+    var weight = parseFloat(document.getElementById('weight').value); 
     var height = parseFloat(document.getElementById('height').value);
     var bmi = weight / ((height/100) * (height/100));
     var resultContainer = document.getElementById('resultContainer');
