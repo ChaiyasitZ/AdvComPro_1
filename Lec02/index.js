@@ -239,13 +239,95 @@
 // const multiply = (a, b) => a * b;
 // console.log(multiply(2, 30)); // Prints: 60
 
-function createQuote(quote, callback) {
-    let myQuote = "Like I always say, " + quote;
-    callback(myQuote); // 2
+// function createQuote(quote, callback) {
+//     let myQuote = "Like I always say, " + quote;
+//     callback(myQuote); // 2
+// }
+
+// function logQuote(quote) {
+//     console.log(quote + ' Yes.. ');
+// }
+
+// createQuote("you will get better", logQuote); // 1
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+// const words = str.split(' ');
+// console.log(words[3]);
+// // expected output: "fox"
+
+// const chars = str.split('');
+// console.log(chars[8]);
+// // expected output: "k"
+
+// function reverseString(value) {
+//     let reversedValue = "";
+//     value.split('').forEach((char) => {
+//         reversedValue = char + reversedValue;
+//     });
+//     return reversedValue;
+// }
+
+// console.log(reverseString('Hello World!'));
+
+// function reverseString(value) {
+    
+//     const reversedValue = value.split('').reverse().join('');
+//     return reversedValue;
+// }
+
+// console.log(reverseString('Hello World!'));
+
+// function circumference(r) {
+//     if (Number.isNaN(Number.parseFloat(r))) {
+//         return 0;
+//     }
+//     return parseFloat(r) * 2.0 * Math.PI;
+// }
+
+// console.log(circumference('4.567abcdefgh')); // 28.695307297889173
+// console.log(circumference('abcdefgh')); // 0
+
+// console.log(Math.floor(5.05)); // 5
+// console.log(Math.ceil(7.004)); // 8
+// console.log(Math.random()); // 0.6223245434803363
+// console.log(Math.min(-2, -3, -1)); // -3
+
+// const start = Date.now();
+// setTimeout(() => {
+//     const millis = Date.now() - start;
+//     console.log(`seconds elapsed = ${Math.floor(millis / 1000)}`);
+// }, 2000);
+
+// function findPerimeter(length, width) {
+//     return (length + width) * 2; // 2 * (length + width)
+// }
+// console.log(findPerimeter(6, 7)); // 26
+// console.log(findPerimeter(20, 10)); // 60
+// console.log(findPerimeter(2, 9)); // 22
+
+function equation(value) {
+    let result = 0;
+    let operator = '+';
+    value.split('').forEach((char) => { // for (let char of value)
+        if (char === '+' || char === '-' || char === '*' || char === '/') { // if (['+', '-', '*', '/'].includes(char))
+            operator = char; // operator = value
+        } else { // else if (Number.isInteger(parseInt(char)))
+            if (operator === '+') { // 
+                result += parseInt(char);
+            } else if (operator === '-') {
+                result -= parseInt(char);
+            } else if (operator === '*') {
+                result *= parseInt(char);
+            } else if (operator === '/') {
+                result /= parseInt(char);
+            }
+        }
+    });
+    return result; // return eval(value);
 }
 
-function logQuote(quote) {
-    console.log(quote + ' Yes.. ');
-}
+console.log(equation('1+1'));
+console.log(equation('7*4-2'));
+console.log(equation('1+1+1+1+1'));
 
-createQuote("you will get better", logQuote); // 1
+
