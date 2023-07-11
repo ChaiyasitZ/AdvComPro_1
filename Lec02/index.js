@@ -202,12 +202,50 @@
 // let result = prtintHello('Chaiyasit !');
 // console.log(result);
 
-let plusFive = (number) => {
-    return number + 5;
-};
-// f is assigned the value of plusFive
-let f = plusFive;
+// let plusFive = (number) => {
+//     return number + 5;
+// };
+// // f is assigned the value of plusFive
+// let f = plusFive;
 
-console.log(plusFive(3)); // 8
-// Since f has a function value, it can be invoked.
-console.log(f(9)); // 14
+// console.log(plusFive(3)); // 8
+// // Since f has a function value, it can be invoked.
+// console.log(f(9)); // 14
+
+// const add = (a, b) => a + b;
+// console.log(add(1, 2)); // 3
+
+// const substract = (a, b) => {
+//     const result = a - b;
+//     return result; // return is necessary in a multi-line arrow function
+// }
+// console.log(substract(4, 2)); // 2
+
+// const sum = (firstParam, secondParam) => {
+//     return firstParam + secondParam;
+// };
+// console.log(sum(2, 5)); // Prints: 7
+
+// const prtintHello = () => {
+//     console.log('hello'); // Prints: Hello
+// };
+// prtintHello();
+
+// const checkWeight = (weight) => {
+//     console.log(`Baggage weight : ${weight} kilograms.`);
+// };
+// checkWeight(25); // Prints: Baggage weight : 25 kilograms.
+
+// const multiply = (a, b) => a * b;
+// console.log(multiply(2, 30)); // Prints: 60
+
+function createQuote(quote, callback) {
+    let myQuote = "Like I always say, " + quote;
+    callback(myQuote); // 2
+}
+
+function logQuote(quote) {
+    console.log(quote + ' Yes.. ');
+}
+
+createQuote("you will get better", logQuote); // 1
