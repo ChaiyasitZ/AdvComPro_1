@@ -305,29 +305,29 @@
 // console.log(findPerimeter(20, 10)); // 60
 // console.log(findPerimeter(2, 9)); // 22
 
-function equation(value) {
-    let result = 0;
-    let operator = '+';
-    value.split('').forEach((char) => { // for (let char of value)
-        if (char === '+' || char === '-' || char === '*' || char === '/') { // if (['+', '-', '*', '/'].includes(char))
-            operator = char; // operator = value
-        } else { // else if (Number.isInteger(parseInt(char)))
-            if (operator === '+') { // 
-                result += parseInt(char);
-            } else if (operator === '-') {
-                result -= parseInt(char);
-            } else if (operator === '*') {
-                result *= parseInt(char);
-            } else if (operator === '/') {
-                result /= parseInt(char);
-            }
-        }
-    });
-    return result; // return eval(value);
-}
+// function equation(value) {
+//     let result = 0;
+//     let operator = '+';
+//     value.split('').forEach((char) => { // for (let char of value)
+//         if (char === '+' || char === '-' || char === '*' || char === '/') { // if (['+', '-', '*', '/'].includes(char))
+//             operator = char; // operator = value
+//         } else { // else if (Number.isInteger(parseInt(char)))
+//             if (operator === '+') { // 
+//                 result += parseInt(char);
+//             } else if (operator === '-') {
+//                 result -= parseInt(char);
+//             } else if (operator === '*') {
+//                 result *= parseInt(char);
+//             } else if (operator === '/') {
+//                 result /= parseInt(char);
+//             }
+//         }
+//     });
+//     return result;
+// }
 
-console.log(equation('1+1'));
-console.log(equation('7*4-2'));
-console.log(equation('1+1+1+1+1'));
+// console.log(equation('1+1'));
+// console.log(equation('7*4-2'));
+// console.log(equation('1+1+1+1+1'));
 
 
