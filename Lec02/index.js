@@ -158,10 +158,56 @@
 //     console.log('No name provided');
 // }
 
-const status = 'error';
+// const status = 'error';
 
-if (status.toUpperCase() === 'ERROR') {
-    console.log('Something went wrong!');
-} else {
-    console.log('Looks great!!');
-}
+// if (status.toUpperCase() === 'ERROR') {
+//     console.log('Something went wrong!');
+// } else {
+//     console.log('Looks great!!');
+// }
+
+// const status = 500;
+
+// if (status === 200) {
+//     console.log('OK!');
+// } else if (status === 400 || status === 500) {
+//     console.log('Error!');
+// } else {
+//     console.log('Unknown status');
+// }
+
+// const status = 700;
+
+// switch (status) {
+//     case 200:
+//         console.log('OK!');
+//         break;
+//     case 400: // if (status === 400 || status === 500)
+//     case 500: // if (status === 400 || status === 500)
+//         console.log('Error!');
+//         break;
+//     default: // else
+//         console.log('Unknown status');
+// }
+
+// // 1. Fuction Definition
+// function prtintHello(name) {
+//     console.log('Hello ' + name);
+//     return name + ' Hello! ';
+// }
+
+// console.log(prtintHello.name);
+
+// // 2. Fuction Call
+// let result = prtintHello('Chaiyasit !');
+// console.log(result);
+
+let plusFive = (number) => {
+    return number + 5;
+};
+// f is assigned the value of plusFive
+let f = plusFive;
+
+console.log(plusFive(3)); // 8
+// Since f has a function value, it can be invoked.
+console.log(f(9)); // 14
