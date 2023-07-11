@@ -127,3 +127,41 @@
 // console.log(flo1.toString()); // '1.5'
 // console.log((100).toString()); // '100'
 
+// let x = 5;
+// let y = 2;
+// let z = x * y;
+// let a = x ** y;
+// document.getElementById("demo1").innerHTML = z;
+// document.getElementById("demo2").innerHTML = a;
+
+// const status = 200;
+
+// if (status === 200) {
+//     console.log('OK!');
+// } else if (status === 400) {
+//     console.log('Error!');
+// } else {
+//     console.log('Unknown status');
+// }
+
+// const status = 200;
+
+// const message = (status === 200) ? 'OK!' : 'Error!';
+
+// console.log(message); // OK!
+
+// const name = '';
+
+// if (name) {
+//     console.log('We have a name!');
+// } else {
+//     console.log('No name provided');
+// }
+
+const status = 'error';
+
+if (status.toUpperCase() === 'ERROR') {
+    console.log('Something went wrong!');
+} else {
+    console.log('Looks great!!');
+}
