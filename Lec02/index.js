@@ -96,34 +96,34 @@
 // console.log(Math.PI); // 3.141592653589793
 // console.log(Math.sqrt(num1)); // 10
 
-let num1 = '150';
-let flo1 = '1.50';
+// let num1 = '150';
+// let flo1 = '1.50';
 
-console.log('\n**********************Converting Strings to Numbers**********************\n');
-// Converting strings to numbers
-console.log(Number.parseInt(num1)); // 150
-console.log(Number.parseInt(num1)); // 1
-console.log(Number.parseInt('ABC')); // NaN (Not a Number)
-console.log(Number.parseInt(0xF)); // 15
+// console.log('\n**********************Converting Strings to Numbers**********************\n');
+// // Converting strings to numbers
+// console.log(Number.parseInt(num1)); // 150
+// console.log(Number.parseInt(num1)); // 1
+// console.log(Number.parseInt('ABC')); // NaN (Not a Number)
+// console.log(Number.parseInt(0xF)); // 15
 
-console.log('\n**********************Converting Strings to Floats**********************\n');
-// Converting strings to floats
-console.log(Number.parseFloat('1.25abc')); // 1.25
-console.log(Number.parseFloat('flo1')); // 1.5
-console.log(Number.parseFloat('ABC')); // NaN (Not a Number)
+// console.log('\n**********************Converting Strings to Floats**********************\n');
+// // Converting strings to floats
+// console.log(Number.parseFloat('1.25abc')); // 1.25
+// console.log(Number.parseFloat('flo1')); // 1.5
+// console.log(Number.parseFloat('ABC')); // NaN (Not a Number)
 
-console.log('\n**********************More Conversation Examples**********************\n');
-// More conversation examples
-// Number after special characters are ignored
-console.log(Number.parseInt('1.5')); // 1
-console.log(Number.parseInt('1 + 1')); // 1
+// console.log('\n**********************More Conversation Examples**********************\n');
+// // More conversation examples
+// // Number after special characters are ignored
+// console.log(Number.parseInt('1.5')); // 1
+// console.log(Number.parseInt('1 + 1')); // 1
 
-// Using Template Literals
-console.log(parseInt(`${1 + 1}`)); // 2
+// // Using Template Literals
+// console.log(parseInt(`${1 + 1}`)); // 2
 
-console.log('\n**********************Converting Numbers to Strings**********************\n');
-// Converting numbers to strings
-console.log(num1.toString()); // '150'
-console.log(flo1.toString()); // '1.5'
-console.log((100).toString()); // '100'
+// console.log('\n**********************Converting Numbers to Strings**********************\n');
+// // Converting numbers to strings
+// console.log(num1.toString()); // '150'
+// console.log(flo1.toString()); // '1.5'
+// console.log((100).toString()); // '100'
 
