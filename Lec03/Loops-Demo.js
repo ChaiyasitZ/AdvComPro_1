@@ -21,3 +21,13 @@ console.log('\n********** for-of loop **********');
 for (let name of names) {
     console.log(name);
 }
+
+// do-while loop
+console.log('\n********** do-while loop **********');
+let index2 = 0;
+do {
+    const name = names[index2];
+    console.log(name);
+    index2++;
+}
+while (index2 < names.length);
