@@ -1,22 +1,18 @@
 let values1 = ['Apple', 1, false];
-let values2 = ['Fries', 2, true];
-let values3 = ['Mars', 9, 'Apple'];
+let values2 = ['Fries', 2, 'Mars'];
+let values3 = ['Mars', 2, 'Apple'];
 
-function compareArrays(arr1, arr2){
-    if(arr1.length !== arr2.length){ // if the length of the arrays are not equal, return false
-        return false; 
-    }
-    for(let i = 0; i < arr1.length; i++){ // if the values of the arrays are not equal, return false
-        if(arr1[i] !== arr2[i]){ 
-            return false;
+// compare array and show array
+function compareArray(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] === arr2[i]) {
+            console.log(arr1[i] + ' and ' + arr2[i] + ' matched');
+        } 
+        if (arr1[i] !== arr2[i]) {
+            console.log(arr1[i] + ' and ' + arr2[i] + ' not matched');
         }
-    }
-    return true;
-}
+    }}
 
-console.log(compareArrays(values1, values2)); // false
-console.log(compareArrays(values1, values3)); // false
-console.log(compareArrays(values1, values1)); // true
-console.log(compareArrays(values2, values3)); // false
-console.log(compareArrays(values2, values2)); // true 
-console.log(compareArrays(values3, values3)); // true 
+compareArray(values3, values2);
+
+  
