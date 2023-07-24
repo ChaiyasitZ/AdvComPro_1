@@ -1,6 +1,6 @@
 const person = {
-    name: 'Chaiyasit',
-    weight: 45,
+    name: 'Anirach',
+    weight: 85,
 }
 
 function sayHello() {
@@ -22,4 +22,3 @@ module.exports = {
     add,
     status
 }
-
