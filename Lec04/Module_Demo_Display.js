@@ -1,7 +1,9 @@
-const hello = require('./Module_Demo_Cal');
+const hello = require('./Module_Demo_Cal'); // import module
+// const hello = require('./Module_Demo_Cal.js'); // import module
+hello.sayHello(); // Hello World
+console.log(hello.person.name); // Anirach
+console.log(hello.cube(3)); // 27
+console.log(hello.add(5, 4)); // 9
+console.log(hello.status); // 200
 
-hello.sayHello();
-console.log(hello.person.name);
-console.log(hello.cube(3));
-console.log(hello.add(5, 4));
-console.log(hello.status);
+// Path: Lec04\Module_Demo_Cal.js
