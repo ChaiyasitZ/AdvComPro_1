@@ -15,7 +15,7 @@ class Song extends Media { // Create a new class called Song that extends Media.
 const mySong = new Song({ // Create a new object instance from the Song class with the following properties:
     artist: "Queen",
     name: "Bohemian Rhapsody",
-    publishDate: 1975
+    publishDate: 1975,
 });
 
 console.log(mySong); // Song { publishDate: 1975, name: 'Bohemian Rhapsody', artist: 'Queen' }
