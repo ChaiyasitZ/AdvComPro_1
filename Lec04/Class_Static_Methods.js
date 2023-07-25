@@ -1,17 +1,17 @@
-class Dog {
-    constructor(name) {
-        this.name = name;
+class Dog { // class
+    constructor(name) { // constructor
+        this.name = name; // instance variable
     }
 
-    introduce() {
-        console.log("This is " + this.name + "!");
+    introduce() { // instance method
+        console.log("This is " + this.name + "!"); // instance method
     }
 
-    static bark() {
-        console.log("Woof!");
+    static bark() { // static method
+        console.log("Woof!"); // static method
     }
 }
 
-const myDog = new Dog("Buster");
-myDog.introduce();
-Dog.bark(); 
+const myDog = new Dog("Buster"); // create an object
+myDog.introduce(); // instance method is called with an object
+Dog.bark(); // static method is called without creating an object
