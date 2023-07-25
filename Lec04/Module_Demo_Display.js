@@ -4,6 +4,6 @@ hello.sayHello(); // Hello World
 console.log(hello.person.name); // Anirach
 console.log(hello.cube(3)); // 27
 console.log(hello.add(5, 4)); // 9
-console.log(hello.status); // 200
+console.log(hello.status); // true
 
 // Path: Lec04\Module_Demo_Cal.js

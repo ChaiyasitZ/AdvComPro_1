@@ -1,41 +1,41 @@
-function criticalCode() {
-    throw "throwing an exception";
+function criticalCode() { // may throw three types of exceptions
+    throw "throwing an exception"; // generates an exception
 }
 
-function logError(theException) {
-    console.log(theException);
+function logError(theException) { // takes one argument
+    console.log(theException); // logs the exception
 }
 
-console.log("\n********Try..Catch********\n");
+console.log("\n********Try..Catch********\n"); // generates an exception
 
 try {
-    criticalCode();
-} catch (ex) {
-    console.log("Got an error");
-    logError(ex);
+    criticalCode(); // may throw three types of exceptions
+} catch (ex) { // ex is the caught exception
+    console.log("Got an error"); // custom message
+    logError(ex); // call a function to further process ex
+}
+ 
+console.log("\n********Throwing in Try..Catch********\n"); // generates an exception
+
+try { // may throw three types of exceptions
+    throw "An exception that is thrown every time"; // generates an exception
+} catch (ex) { // ex is the caught exception
+    console.log("Got an error"); // custom message
+    logError(ex); // call a function to further process ex
 }
 
-console.log("\n********Throwing in Try..Catch********\n");
+console.log("\n********Try..Catch Finally********\n"); // finally always executes
 
 try {
-    throw "An exception that is thrown every time";
-} catch (ex) {
-    console.log("Got an error");
-    logError(ex);
+    criticalCode(); // may throw three types of exceptions
+} catch (ex) { // ex is the caught exception
+    console.log("Got an error"); // custom message
+    logError(ex); // call a function to further process ex
+} finally { // finally always executes
+    console.log("Code that always will run"); // always runs
 }
-
-console.log("\n********Try..Catch Finally********\n");
-
-try {
-    criticalCode();
-} catch (ex) {
-    console.log("Got an error");
-    logError(ex);
-} finally {
-    console.log("Code that always will run");
-}
-function helloWorld() {
-    console.log("\n********Throwing Exeptions********\n");
+function helloWorld() { // may throw three types of exceptions
+    console.log("\n********Throwing Exeptions********\n"); // custom message
 } // end helloWorld
 
 
