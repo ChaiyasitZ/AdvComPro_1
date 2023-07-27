@@ -1,37 +1,33 @@
-function calculateBMI() { 
-    var weight = parseFloat(document.getElementById('weight').value); 
-    var height = parseFloat(document.getElementById('height').value);
-    var bmi = weight / ((height/100) * (height/100));
-    var resultContainer = document.getElementById('resultContainer');
+const sideMenu = document.querySelector('aside');
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
 
-    if (!isNaN(bmi)) {
-      var bmiText = "Your BMI is: " + bmi.toFixed(2);
+const darkMode = document.querySelector('.dark-mode');
 
-      resultContainer.innerHTML = bmiText;
-      resultContainer.classList.remove("low", "normal", "high", "caution");
+menuBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'block';
+});
 
-      if (bmi < 18.5) {
-        resultContainer.classList.add("low", "caution");
-        var cautionText = "Caution: Low BMI may indicate an eating disorder, malnutrition or other health problems.";
-        var cautionElement = document.createElement("p");
-        cautionElement.textContent = cautionText;
-        resultContainer.appendChild(cautionElement);
-      } else if (bmi >= 18.5 && bmi <= 24.9) {
-        resultContainer.classList.add("normal");
-      } else {
-        resultContainer.classList.add("high", "caution");
-        var cautionText = "Caution: High BMI may indicate increased health risks.";
-        var cautionElement = document.createElement("p");
-        cautionElement.textContent = cautionText;
-        resultContainer.appendChild(cautionElement);
-      }
-    } else {
-      resultContainer.innerHTML = "Please enter valid values for weight and height.";
-    }
-  }
+closeBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'none';
+});
 
-  var form = document.getElementById('bmiForm');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    calculateBMI();
-  });
+darkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode-variables');
+    darkMode.querySelector('span:nth-child(1)').classList.toggle('active');
+    darkMode.querySelector('span:nth-child(2)').classList.toggle('active');
+})
+
+
+Orders.forEach(order => {
+    const tr = document.createElement('tr');
+    const trContent = `
+        <td>${order.productName}</td>
+        <td>${order.productNumber}</td>
+        <td>${order.paymentStatus}</td>
+        <td class="${order.status === 'Declined' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="primary">Details</td>
+    `;
+    tr.innerHTML = trContent;
+    document.querySelector('table tbody').appendChild(tr);
+});
