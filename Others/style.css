@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root{
@@ -706,3 +707,52 @@ main .recent-orders a{
     }
 
 }
+=======
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+>>>>>>> 112168a131216f59034dc5306d7e3f9ee60866f6
