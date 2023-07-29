@@ -12,13 +12,20 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
 
     if (bmi < 18.5) {
         bmiCategory = "Underweight";
+        document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
+        document.getElementById("result").style.color = "red"; // Change text color to red
     } else if (bmi >= 18.5 && bmi < 24.9) {
         bmiCategory = "Normal weight";
+        document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
+        document.getElementById("result").style.color = "green"; // Change text color to green
     } else if (bmi >= 25 && bmi < 29.9) {
         bmiCategory = "Overweight";
+        document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
+        document.getElementById("result").style.color = "orange"; // Change text color to orange
     } else {
         bmiCategory = "Obese";
     }
 
-    document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
 });
+
+
