@@ -15,25 +15,25 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
         bmiCategory = "Underweight";
         document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
         document.getElementById("result").style.color = "red";
-        document.getElementById("caution").innerText = "Caution: You are in the Underweight category. It's important to maintain a healthy weight.";
+        document.getElementById("caution").innerText = "Caution: You are in the Underweight category, \nIt's important to maintain a healthy weight.";
         document.getElementById("caution").style.color = "red";
     } else if (bmi >= 18.5 && bmi < 24.9) { 
         bmiCategory = "Normal weight";
         document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
         document.getElementById("result").style.color = "green";
-        document.getElementById("caution").innerText = "Caution: You are in the Normal weight category. It's important to maintain a healthy weight.";
+        document.getElementById("caution").innerText = "Caution: You are in the Normal weight category, \nKeep up the good work!";
         document.getElementById("caution").style.color = "green";
     } else if (bmi >= 25 && bmi < 29.9) {
         bmiCategory = "Overweight";
         document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
         document.getElementById("result").style.color = "orange";
-        document.getElementById("caution").innerText = "Caution: You are in the Overweight category. It's important to maintain a healthy weight.";
+        document.getElementById("caution").innerText = "Caution: You are in the Overweight category, \nIt's important to maintain a healthy weight.";
         document.getElementById("caution").style.color = "orange";
     } else {
         bmiCategory = "Obese";
         document.getElementById("result").innerText = "Your BMI is: " + bmi.toFixed(2) + " (" + bmiCategory + ")";
         document.getElementById("result").style.color = "red";
-        document.getElementById("caution").innerText = "Caution: You are in the Obese category. Please consult a healthcare professional.";
+        document.getElementById("caution").innerText = "Caution: You are in the Obese category, \nPlease consult a healthcare professional.";
         document.getElementById("caution").style.color = "red";
     }
 
