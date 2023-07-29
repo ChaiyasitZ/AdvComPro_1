@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 800px;
     width: 100%;
-    border: 2px solid #007bff;
+    border: 1px solid #000000;
 }
 
 h1 {
@@ -34,7 +34,7 @@ input {
     width: 100%;
     padding: 0 0;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px dotted #ccc;
     border-radius: 5px;
     font-size: 28px; 
     text-align: center;
