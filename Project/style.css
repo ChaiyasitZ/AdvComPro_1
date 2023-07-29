@@ -32,33 +32,43 @@ label {
 
 input {
     width: 100%;
-    padding: 0px 0px;
+    padding: 0 0;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 30px; 
+    border-radius: 5px;
+    font-size: 28px; 
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 button {
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 0px;
     background-color: rgb(12, 165, 12);
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 25px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: rgb(26, 101, 26);
 }
 
 #result {
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+#caution {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;   
+    background-color: #f7f7f7;
+    border-radius: 10px;
 }
 
