@@ -7,7 +7,7 @@ function promiseTimeout(ms) {
 async function run() {
     // logic
     console.log("Start!!");
-    await promiseTimeout(2000); // delay 2 seconds
+    await promiseTimeout(1000); // delay 1 seconds
     console.log("Done!!");
 }
 
