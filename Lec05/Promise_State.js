@@ -1,15 +1,15 @@
-const promise = new Promise((resolve, reject) => {
-    const resr = true;
-    if (resr) {
-        resolve("Resolved!");
+const promise = new Promise((resolve, reject) => { // Promise constructor
+    const resr = true; // true or false
+    if (resr) { // if true
+        resolve("Resolved!"); // resolve
     }
-    else {
-        reject(Error("Fatal Error!"));
+    else { // if false
+        reject(Error("Fatal Error!")); // reject
     }
-});
+}); 
 
-promise.then(
-    (res) => console.log(res),
-    (err) => console.log(err)
+promise.then( // then() method
+    (res) => console.log(res), // resolve
+    (err) => console.log(err) // reject
 );
 

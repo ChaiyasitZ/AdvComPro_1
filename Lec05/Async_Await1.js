@@ -13,6 +13,7 @@ async function run() {
     // logic
     console.log("Start!!");
     await promiseTimeout(2000); // delay 2 seconds
+    // try to tkae await and see what happens
     const response = await longRunningOperation();
     console.log(response);
     console.log("Stop!!");
