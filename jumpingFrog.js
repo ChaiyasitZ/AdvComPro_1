@@ -1,4 +1,4 @@
-const jumppingFrog = (n, length) => {
+const jumpingFrog = (n, length) => {
     let count = 1;
     let i = 0;
     while (i < n) {
@@ -9,6 +9,6 @@ const jumppingFrog = (n, length) => {
     return count;
 }
 
-console.log(jumppingFrog(5, [1, 1, 1, 1, 1])); // 6
-console.log(jumppingFrog(5, [1, 3, 1, 1, 1])); // 4
-console.log(jumppingFrog(5, [1, 1, 0, 1, 1])); // no chance :-(
+console.log(jumpingFrog(5, [1, 1, 1, 1, 1])); // 6
+console.log(jumpingFrog(5, [1, 3, 1, 1, 1])); // 4
+console.log(jumpingFrog(5, [1, 1, 0, 1, 1])); // no chance :-(
