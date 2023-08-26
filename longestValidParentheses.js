@@ -16,7 +16,7 @@ function longestValidParentheses(s) {
     return max;
 }
 
-console.log(longestValidParentheses("(()"));
-console.log(longestValidParentheses(")()())")); 
-console.log(longestValidParentheses("())))))(()())(")); 
+console.log(longestValidParentheses("(()")); // 2
+console.log(longestValidParentheses(")()())")); // 4
+console.log(longestValidParentheses("())))))(()())(")); // 6
 

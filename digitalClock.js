@@ -1,5 +1,3 @@
-// example output is 5025 seconds in 1 hour 23 minutes 45 seconds
-
 function digitalClock(seconds) {
     let hours = Math.floor(seconds / 3600);
     let minutes = Math.floor((seconds % 3600) / 60);
@@ -7,6 +5,6 @@ function digitalClock(seconds) {
     return `${hours}:${minutes}:${secs}`;
     }
 
-console.log(digitalClock(5025));
-console.log(digitalClock(61201));
-console.log(digitalClock(87000));
+console.log(digitalClock(5025)); // 1:23:45
+console.log(digitalClock(61201)); // 17:00:01
+console.log(digitalClock(87000)); // 24:10:00

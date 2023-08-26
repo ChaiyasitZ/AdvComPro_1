@@ -10,6 +10,6 @@ function highestDigit(num) {
     return numMax;
 }
 
-console.log(highestDigit(379)); 
-console.log(highestDigit(23145678)); 
-console.log(highestDigit(377401)); 
+console.log(highestDigit(379)); // 9
+console.log(highestDigit(23145678)); // 8
+console.log(highestDigit(377401)); // 7

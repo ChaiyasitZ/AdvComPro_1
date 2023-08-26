@@ -1,10 +1,14 @@
-// exercice A frog want to cross a river. Unfortunately, he can't jump across the river in one jump. He can only jump one unit forward or three units forward. He can't jump backward. Write a function that takes two arguments: the length of the river and an array of integers, where each integer represents the position of a stone in the river. The function should return the minimum number of jumps the frog needs to cross the river. If the frog can't cross the river, the function should return -1.
+const jumppingFrog = (n, length) => {
+    let count = 1;
+    let i = 0;
+    while (i < n) {
+        if (length[i] === 0) return "no chance :-(";
+        i += length[i];
+        count++;
+    }
+    return count;
+}
 
-
-
-
-// console.log(jumpingFrog(5, [1, 1, 1, 1, 1])); output is 6
-// console.log(jumpingFrog(5, [1, 3, 1, 1, 1])); output is 4
-
-
-    
+console.log(jumppingFrog(5, [1, 1, 1, 1, 1])); // 6
+console.log(jumppingFrog(5, [1, 3, 1, 1, 1])); // 4
+console.log(jumppingFrog(5, [1, 1, 0, 1, 1])); // no chance :-(

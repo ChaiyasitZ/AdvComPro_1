@@ -17,7 +17,7 @@ function frequencySort(s) {
     return result;
 }
 
-console.log(frequencySort("tree"));
-console.log(frequencySort("cccaaa"));
-console.log(frequencySort("Aabb"));
-console.log(frequencySort("2a554442f544asfasssffffasss"));
+console.log(frequencySort("tree")); // "eetr"
+console.log(frequencySort("cccaaa")); // "cccaaa"
+console.log(frequencySort("Aabb")); // "bbAa"
+console.log(frequencySort("2a554442f544asfasssffffasss")); // "sssssssffffff44444aaaa55522"
