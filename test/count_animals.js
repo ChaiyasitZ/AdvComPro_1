@@ -28,13 +28,13 @@ function getAnimalNames(chars, index, charCounts) {
             for (const char of animalNames[i]) {
                 newCharCounts[char]--;
             }
-            const animalNamesFromHere = [animalNames[i], ...getAnimalNames(chars, index + animalNames[i].length, newCharCounts)];
+            const animalNamesFromHere = [animalNames[i], 
+            ...getAnimalNames(chars, index + animalNames[i].length, newCharCounts)];
             if (animalNamesFromHere.length > maxCountNames.length) {
                 maxCountNames = animalNamesFromHere;
             }
         }
     }
-
     return maxCountNames;
 }
 
@@ -43,7 +43,6 @@ function count_animals(chars) {
     for (const char of chars) {
         charCounts[char] = (charCounts[char] || 0) + 1;
     }
-
     const animalNamesFound = getAnimalNames(chars, 0, charCounts);
     return (animalNamesFound.length);
 }

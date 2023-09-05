@@ -10,7 +10,9 @@ const bomb = (pos) => {
     const circle2 = findCircle(x2, y2, t2 * soundSpeed)
     const circle3 = findCircle(x3, y3, t3 * soundSpeed)
 
-    const intersection = circle1.filter(([x, y]) => circle2.some(([x2, y2]) => x == x2 && y == y2) && circle3.some(([x3, y3]) => x == x3 && y == y3)).shift()
+    const intersection = circle1.filter(([x, y]) => 
+    circle2.some(([x2, y2]) => x == x2 && y == y2) &&
+    circle3.some(([x3, y3]) => x == x3 && y == y3)).shift()
     
     return intersection
 }

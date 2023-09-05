@@ -6,21 +6,9 @@ function secretWord(word, key) {
   })
 
   const center = Math.floor(word.length / 2) - 1;
-
-  const centerTriplet = 
-      alphabetDict[word[center]] + 
-      alphabetDict[word[center - 1]] + 
-      alphabetDict[word[center + 1]];
-
-  const firstTriplet = 
-      alphabetDict[word[key - 1]] + 
-      alphabetDict[word[key - 2]] + 
-      alphabetDict[word[key - 3]];
-
-  const difference = 
-      (centerTriplet - firstTriplet) / 
-      (Math.round(key / 2) - 1);
-
+  const centerTriplet = alphabetDict[word[center]] + alphabetDict[word[center - 1]] + alphabetDict[word[center + 1]];
+  const firstTriplet = alphabetDict[word[key - 1]] + alphabetDict[word[key - 2]] + alphabetDict[word[key - 3]];
+  const difference = (centerTriplet - firstTriplet) / (Math.round(key / 2) - 1);
   const charTriplet = []
   for (let i = 1; i <= key; i++) {
       charTriplet.push(getDigit(firstTriplet, difference, i));
@@ -48,10 +36,8 @@ function secretWord(word, key) {
           }
       }
   })
-
   return charCodeAt.map(char => word[char]).join("");
 }
-
 function getDigit(s, d, n) {
   return s + ((n - 1) * d);
 }
